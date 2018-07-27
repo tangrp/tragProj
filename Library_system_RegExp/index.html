@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" class="indexCss" href = "./css/index.css">
+</head>
+<body>
+    <h1 class="title">图书管理系统 Library Manager</h1>
+    <div class="wrapper">
+        <div class = "tpL">
+            <span id="count"></span>
+            <div class="serachWrap">
+                <input type="text" id = "serach" placeholder="请输入图书名称或者书籍的作者进行搜索">
+                <span class="iconSearce"></span>
+            </div>
+        </div>
+        <table class="tableBox" cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>书名</th>
+                    <th>描述</th>
+                    <th>作者</th>
+                </tr>
+            </thead>
+            <tbody class="tableContent">
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/book-info.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

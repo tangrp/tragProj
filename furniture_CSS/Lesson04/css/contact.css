@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.container > img{
+    width: 100%;
+}
+
+.container .about .about-L{
+    width: 50%;
+}
+
+.container .about .about-R{
+    width: 50%;
+}
+
+.container .about h3{
+    color: #662B0B;
+    font-weight: lighter;
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+
+.container .about .about-L input{
+    height: 35px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.container .about .about-L textarea{
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 5px;
+    border: 1px solid black;
+    resize: none;
+}
+
+.container .about .about-L button{
+    margin-bottom: 55px;
+    background: green;
+    color: white;
+    line-height: 30px;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.container .about .about-L p{
+    margin: 13px 0;
+}
+
+.container .about .about-R p{
+    margin: 25px 0;
+    font-size: 14px;
+}
+
+.container .about .about-R a{
+    text-decoration: none;
+}
+
+.container .about .about-R a:hover{
+    text-decoration: underline;
+}

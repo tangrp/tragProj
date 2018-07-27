@@ -1,0 +1,122 @@
+@bgcolor:#82c353;
+#footer{
+    background-color: #f0f2f3;
+}
+.ft_title{
+    width: 100%;
+    background-color: @bgcolor;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 8px;
+    font-size: 22px;
+}
+.ft_keyword{
+    .footer_mark-keyword{
+        padding: 25px 0;
+        margin-top: 25px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        li{
+            display: inline-block;
+            width:155px;
+            height: 120px;
+            text-align: center;
+            font-size: 0;
+        }
+    }
+
+    .icon{
+        display: block;
+        width:84px;
+        height: 97px;
+        text-align: center;
+        line-height: 97px;
+        color: #fff;
+        font-size: 22px;
+        margin: auto;
+        background: url("../images/common-img/sprites_0.png") no-repeat -345px -135px ;
+    }
+    .desc{
+        color: #999;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+.ft_menu_Wrap{
+   margin: 10px auto 32px;
+    .ft_menu > li{
+        float: left;
+        width:calc(100% / 6);
+        height: 130px;
+        box-sizing: border-box;
+        border-left: 1px solid #b6b7b8;
+        text-align: center;
+        &:last-child{
+            border-right: 1px solid #b6b7b8;
+        }
+    }
+    
+    .ft_ct{
+        display: inline-block;
+        text-align: left;
+    }
+    .title{
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+    .icon{
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        vertical-align: middle;
+        margin-right: 7px;
+        background-image: url("../images/common-img/sprites_0.png");
+    }
+    .sinaIcon{
+        background-position: -368px -47px;
+    }
+    .wechartIcon{
+        background-position: -368px -84px;
+    }
+
+    .ft_submenu{
+        padding: 15px 0;
+        li{
+            line-height: 25px;
+            color:#666;
+        }
+    }
+    .contact_icon{
+        display: inline-block;
+        width: 86px;
+        height: 86px;
+        background-image: url("../images/common-img/sprites_0.png");
+        margin-top: 7px;
+    }
+    .sinaCIcon{
+        background-position: -264px -231px;
+    }
+    .wechartCIcon{
+        background-position: -350px -231px;
+    }
+    .linkH{
+        color:#666;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+
+}
+
+.ft_copyright{
+    background-color:@bgcolor;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+}

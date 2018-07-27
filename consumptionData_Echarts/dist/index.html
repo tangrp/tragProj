@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消费图表</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="dataList">
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>食品酒水</th>
+                        <th>购物消费</th>
+                        <th>居家生活</th>
+                        <th>行车交通</th>
+                        <th>休闲娱乐</th>
+                        <th>人情费用</th>
+                        <th>金融保险</th>
+                        <th>药品医疗</th>
+                        <th>其它消费</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+                <tfoot><tr></tr></tfoot>
+            </table>
+        </div>
+        <div class="charts">
+            <div id="ecsLine" ></div>
+            <div id="ecsPie"></div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/echarts/dist/echarts.js"></script>
+    <script src="../node_modules/echarts/theme/dark.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

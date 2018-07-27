@@ -1,0 +1,190 @@
+@charset "utf-8";
+.wrapper{
+    max-width: 1500px;
+    min-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.subWrapper{
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.link {
+    color: #333;
+    transition: all .1s linear;
+}
+
+.link:hover {
+    color: rgb(177, 171, 171);
+}
+
+.link .pitIcon{
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url("../img/pointer.png") no-repeat 0 1px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.link:hover .pitIcon{
+    background: url("../img/pointer.png") no-repeat -15px 1px;
+}
+
+/* 当前位置 */
+.curaddres{
+    background: black;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    height: 60px;
+    line-height: 60px;
+}
+.curaddres .addres{
+    display: inline-block;
+    color: #747272;
+    margin-right: 15px;
+    
+}
+.curaddres .addres .pot{
+    display: inline-block;
+    width: 20px;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: right;
+}
+.curaddres .curads{
+    display: inline-block;
+    color: #fff;
+}
+
+/* 二级菜单栏 */
+main .subNav {
+    background-color: #f1f1f1;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+.subNav ul {
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+}
+.subNav li {
+    margin: 0 15px;
+}
+.subNav li a{
+    color: #333;
+}
+.subNav li .navLink {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.subNav li .navLink::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background: #333;
+    transition: all .2s linear;
+}
+.subNav li  .udline::after{
+    width: 100%;
+}
+
+.subNavFix{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    z-index: 100;
+}
+
+
+/* 按钮样式 */
+.linkBtn{
+    display: inline-block;
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+    transition: all .1s linear;
+}
+.linkBtn:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/* 鼠标进入图片放大 */
+.ihScale{
+    width: 100%;
+    transition: all .3s linear;
+}
+.ihScale:hover{
+    transform: scale(1.05);
+}
+
+/* 播放按钮 */
+.vdplay{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(0,0,0,.5);     
+    background-image: url("../img/vdplay.png");
+    background-size: cover !important;
+    transition: all .1s linear;
+}
+
+.vdplay:hover{
+    background: rgba(0,0,0,.4);     
+    background-image: url("../img/vdplayhover.png");
+}
+
+/* 播放区域样式 */
+.videoWrapper{
+    display: none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.vdvideowrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 620px;
+    box-sizing: border-box;
+    background: black;
+    padding: 10px;
+    overflow: hidden;
+}
+#youkuplayer{
+    margin: 0 auto;
+    width: 950px;
+    height: 570px;
+}
+.closeVideo{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background: url("../img/close.png") no-repeat;
+    background-size: cover;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    transition: all .1s linear;
+}
+.closeVideo:hover{
+    transform: rotate(90deg);
+}

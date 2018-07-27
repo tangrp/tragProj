@@ -1,0 +1,93 @@
+.container {
+    h3{
+        text-align: center;
+        padding: 50px 0;
+        font-size: 32px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #d88e05;
+    }
+    .imgWrpa {
+        margin-bottom: 30px;
+        position: relative;
+        border: 1px solid #bbb;
+        img{
+        width: 100%;
+        }
+    }
+
+    /* 轮播图 */
+    .img_box{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .img_box li:not(:first-child){
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+  
+    .img_box li{
+        width: 100%;
+        opacity: 0;
+        transition: all 2s linear;
+    }
+    .img_box li:first-child{
+        opacity: 1;
+    }
+    .img_box li.show{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    /* 控制按钮 */
+    .dot_warp{
+        position: absolute;
+        bottom: 12px;
+        left: 30px;
+        z-index: 100;
+    }
+    .dot_warp span{
+        display: inline-block;  
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+        transition: .1s;
+        margin-left: 13px;
+    }
+    .dot_warp span.dotShow{
+        background-color: #fff;
+    }
+
+
+
+
+    .img_cols66{
+        width: 66%;    
+    }
+    .img_cols33{
+        width: 31.5%;    
+    }
+    .img-row{
+        .img_colsItem{
+            width: 100%;  
+        }
+    }
+    .img_cols4{
+        margin-left: 3%;
+    }
+    .img_colsIfr{
+        width: 31.5%; 
+        height: 346px;
+        iframe{
+            width:100%;
+            height: 100%;
+        }
+    }
+
+
+   
+}

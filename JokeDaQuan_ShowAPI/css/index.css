@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* 内容 */
+#content{
+    height: calc(100% - 49px);
+    overflow-y: scroll;
+    /* background-color: antiquewhite; */
+}
+
+#content::-webkit-scrollbar{
+    display: none;
+}
+
+/* 标签栏 */
+#tabBar{
+    background: #333333;
+    width: 100%;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#tabBar .tabBar_item{
+    width: 33.3%;
+    height: 100%;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    line-height: 49px;
+    letter-spacing: 2px;
+}
+#tabBar .tabBar_item:active{
+    background: #444;
+}
+
+.content_list{
+    margin-top: 15px;
+}
+.content_list li{
+    width: 92%;
+    /* background: orange; */
+    margin: 8px auto;
+    border-bottom: 1px solid #d8d5d5;
+    padding: 7px 0 15px;
+}
+.content_list li .title{
+    font-size: 20px;
+}
+.content_list li .date{
+    font-size: 14px;
+    color: #a0a098;
+    padding: 6px 0 15px;
+    
+}
+.content_list li .text{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.content_list li  img{
+    width: 100%;
+    border-radius: 1%;
+}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+footer .wrapper{
+    background-color: #191919;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer .ftContent .ftNav{
+    padding: 50px 0; 
+}
+
+footer .ftContent .ftNav .ftMenuList > li{
+    width: 25%;
+    float: left;
+}
+
+footer .ftContent .ftNav .ftSubMenuList li{
+    margin-top: 23px;
+   
+}
+footer .ftNav .ftSubMenuList li.netWorks a{
+    display: inline-block;
+    width: 33px;
+    height: 25px;
+    margin-right: 12px;
+    background: url("../img/index/footer_net.png") no-repeat;
+    background-position: -2px -6px;
+}
+footer .ftNav .ftSubMenuList li.netWorks a:nth-child(2){
+    background-position: -52px -6px;
+}
+footer .ftNav .ftSubMenuList li.netWorks a:nth-child(3){
+    background-position: -102px -6px;
+}
+footer .ftContent  a{
+    color: #999;
+}
+
+footer .ftContent  a:hover{
+    text-decoration: underline;
+}
+
+footer .ftContent .ftOther{
+    border-top: 1px solid rgb(153, 153, 153);
+    padding: 30px 0 35px 0; 
+    color: #999;
+}
+
+footer .ftContent .ftOther li{
+    float: left;
+}
+footer .ftContent .ftOther li a{
+    margin-right: 30px;
+}

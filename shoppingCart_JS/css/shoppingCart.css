@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+.warpper{
+    margin-top: 50px;
+    padding: 7px;
+}
+.goodsList li{
+    padding:15px;
+    height: 70px;
+
+}
+.goodsList li:nth-child(even){
+    background: #eee;
+}
+.goodsList .gdsPic{
+    height: inherit;
+}
+.goodsList .gdsPic img{
+    width: 55px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.goodsList span{
+    display: block;
+}
+.goodsList .descW{
+    width: 50%;
+}
+
+.goodsList .gdsPrice{
+    color: red;
+    line-height: 30px;
+}
+.allMoney{
+    color: red;
+    font-size: 16px;
+    padding: 10px;
+    text-align: right;
+}
+.gNumWrap{
+    font-size: 0;
+}
+.gNumWrap .gNums{
+    outline: none;
+    font-size:14px;
+    border: 1px solid #aaaaaa;
+    padding: 0 7px;
+    height: 23px;
+    width: 40px;
+    box-sizing: border-box;
+}
+.gNumWrap span{
+    user-select: none;
+    font-size:14px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #aaaaaa;
+    cursor: pointer;
+    height: 23px;
+    width: 20px;
+    vertical-align: top;
+    background: white;
+   
+}
+.gNumWrap .reduceBtn{
+    transform: translateX(1px);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.gNumWrap .addBtn{
+    transform: translateX(-1px);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.delBtn{
+    cursor: pointer;
+    border: 1px solid rgb(66, 19, 19);
+    padding: 7px 25px;
+    background: rgb(41, 20, 20);
+    color: white;
+    transition: all .1s ease-in;
+}
+.delBtn:hover{
+    background: rgb(59, 31, 31);
+}
+

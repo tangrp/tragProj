@@ -1,0 +1,35 @@
+{
+    "ifocs": [{
+        "gdsImg": "example_0",
+        "oPrice": "580",
+        "cPrice": "480"
+    },{
+        "gdsImg": "example_0",
+        "oPrice": "60323",
+        "cPrice": "59323"
+    },{
+        "gdsImg": "example_0",
+        "oPrice": "0",
+        "cPrice": "59323"
+    },{
+        "gdsImg": "example_0",
+        "oPrice": "0",
+        "cPrice": "59323"
+    },{
+        "gdsImg": "example_0",
+        "oPrice": "0",
+        "cPrice": "59323"
+    },{
+        "gdsImg": "example_0",
+        "oPrice": "0",
+        "cPrice": "59323"
+    },{
+        "gdsImg": "example_0",
+        "oPrice": "0",
+        "cPrice": "59323"
+    },{
+        "gdsImg": "example_0",
+        "oPrice": "0",
+        "cPrice": "59323"
+    }]
+}

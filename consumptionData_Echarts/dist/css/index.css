@@ -1,0 +1,43 @@
+table {
+  color: #fff;
+}
+thead,
+tfoot {
+  background: #383838;
+}
+tbody {
+  background: #474747;
+}
+tbody td:focus {
+  background: #fff;
+  outline: none;
+  color: #333;
+}
+.charts {
+  zoom: 1;
+}
+.charts::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+#ecsLine {
+  width: 70%;
+  height: 400px;
+  float: left;
+}
+#ecsPie {
+  width: 30%;
+  height: 400px;
+  float: right;
+}
+@media screen and (max-width: 1180px) {
+  #ecsLine {
+    width: 100%;
+  }
+  #ecsPie {
+    width: 100%;
+  }
+}

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.welcome{
+    width: 100%;
+    background: #333;
+    height: 240px;
+    position: relative;
+}
+
+.wel-container{
+    width: 65%;
+    margin: 0 auto;
+    height: 240px;
+    position: relative;
+}
+
+.welcome .welcome-img{
+    vertical-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.welcome .welcome-img img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.welcome .welcome-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 450px;
+    color: white;
+}
+
+.welcome-text h1{
+    font-weight: lighter;
+    padding: 30px 0 15px 0;
+    box-sizing: border-box;
+}
+
+.new-disign  .ds-imgbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.new-disign  .ds-imgbox img{
+    width: 28%;
+    height: 270px;
+    margin: 10px;
+}
+
+.des-idea{
+    width: 100%;
+    position: relative;
+}
+
+.des-idea img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.des-idea p{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    width: 40%;
+    color: white;
+    padding: 120px 10px 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.tec-service{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.tec-service .titleh1{
+    width: 100%;
+}
+
+.tec-service section{
+    width: 20%;
+    margin: 0 1%;
+}
+
+.tec-service .details-box h2 .dt-box-no{
+    color: #662B0B;
+}
+
+ .details-box h2 .dt-box-type{
+    color: #7c4e0b;
+    font-size: 20px;
+}
+
+.details-box img{
+    width: 100%;
+    margin: 7px 0;
+}
+
+.details-box p{
+    color: rgba(0,0,0,.7);
+    margin-bottom: 15px;
+}
+
+.details-box a{
+    display: inline-block;
+    line-height: 40px;
+    color: black;
+    border-top: 2px solid #7c4e0b;
+    text-decoration: none;
+}
+
+.details-box a:hover{
+    color: green;
+    text-decoration: underline;
+}

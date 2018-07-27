@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+.content .about{
+    width: 100%;
+    position: relative;
+}
+
+.content .about h1{
+    width: 100%;
+}
+
+.about .aboutL{
+    width: 62%;
+    float: left;
+}
+
+.about .aboutR{
+    width: 36%;
+    float: right;
+}
+
+.about .aboutR img{
+    width: 100%;
+}
+
+.about .aboutR .aboutR-list li:before{
+    content: url("../imgs/cir.png");
+    margin-right: 20px;
+    position: relative;
+    top: 7px;
+    left: 8px;
+}
+
+.about .aboutR .aboutR-list li{
+    background:#008800 ;
+    margin: 7px 0;
+    height: 45px;
+    line-height: 45px;
+}
+
+.about .aboutR .aboutR-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+ .about .aboutL .dts-title{
+     color: #7c4e0b;
+     margin-bottom: 2px;
+}
+
+.about .aboutL .abl-details > p{
+    margin-top: 2px;
+    color: lightslategray;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.about .aboutL .abl-des .hmdis-title{
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #662B0B;
+}
+
+.about .aboutL .abl-des p{
+    margin: 15px 0;
+    color: #662B0B;
+}
+
+.we-team{
+     width: 100%;
+     text-align: center;
+ }
+
+.we-team .team-resume .resume-item{
+    display: inline-block;
+}
+
+.resume-item {
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+
+.resume-item:nth-child(2){
+    margin: 0 50px;
+}
+
+.res-pic{
+    width:200px;
+    height: 200px;
+}
+
+.res-pic img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 10px solid orange;
+    border-top:10px solid purple;
+    border-left: 10px solid purple;
+    cursor: pointer;
+}
+
+.res-info{
+    width: 180px;
+    height: 180px;
+    border: 10px solid orange;
+    border-top:10px solid purple;
+    border-left: 9px solid purple;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0;
+    transition:all 0.5s linear;
+}
+
+.res-pic:hover .res-info {
+    opacity: 1;
+    transform: rotateZ(180deg);
+}
+
+.res-pic:hover .mask{
+    display: block;
+}
+
+.res-pic .mask{
+    position: absolute;
+    top: 50%;
+    color: white;
+    transform: translateY(-50%);
+    left: 0;
+    text-align: center;
+    vertical-align: center;
+    width: 180px;
+    display: none;
+}
+
+.res-pic  .mask hr{
+    margin:  5px auto;
+    width: 50%;
+    text-align: center;
+}

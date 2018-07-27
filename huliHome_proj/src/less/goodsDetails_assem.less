@@ -1,0 +1,264 @@
+#main {
+    margin: 0 auto;
+    // 图片
+    .img_box {
+        margin: 35px 0 20px;
+        border-bottom: 1px solid #cccccc;
+        .big {
+            width: 80%;
+            height: 703px;
+            .bigImg {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+        }
+        .smallImg {
+            width: 17%;
+            img {
+                display: block;
+                width: 83%;
+                border-radius: 5px;
+                border: 3px solid transparent;
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+          // 说明
+        .introduce {
+        font-size: 18px;
+        padding: 10px 0;
+        .name {
+            font-size: 30px;
+            margin-right: 25px;
+        }
+        .worn {
+            margin-left: 20px;
+            padding-left: 15px;
+            border-left: 1px solid #000000;
+            }
+        } 
+    }
+   .common {
+       .rate {
+           .fl {
+               width: 50%;
+           .old,.now {
+               display: inline-block;
+               font-size: 45px;
+               font-weight: bold;
+               span {
+                   font-size: 16px;
+                   color: #000000;
+               }
+           }
+           .old > span:first-child {
+            vertical-align: top;
+            
+           }
+           .now {
+            color: #d8170e;
+           }
+        }
+        .fr {
+            width: 50%;
+            text-align: right;
+            
+            div {
+                display: inline-block;
+                margin-left: 20px;
+            }
+           .number {
+               position: relative;
+               input {
+                   width: 80px;
+                   height: 45px;
+                   border: 1px solid #9a9b9c;
+                   border-radius: 5px;
+                   font-size: 20px;
+                   text-align: center;
+                   padding-right: 30px;
+               }
+               p {
+                position: absolute;
+                top: 0;right: 0;
+               span {
+                    font-size: 22px;
+                   display: block;
+                   width: 23px;
+                   height: 21px;
+                   line-height: 23px;
+                   text-align: center;
+                   border: 1px solid #9a9b9c;
+                   border-bottom: 1px solid transparent;
+                   cursor: pointer;
+                   &.add {
+                       color: #666;
+                       background: #e3e3e3;
+                   }
+                   &.minus {
+                       background: #c5c3c4;
+                       color: #999;
+                   }
+               }
+            }
+           }
+           .btn {
+               button {
+                   width: 197px;
+                   height: 47px;
+                   font-size: 24px;
+                   border-radius: 5px;
+                   cursor: pointer;
+               }
+               .nowBuy {
+                    color: #ffffff;
+                    background: #db261f;
+                    &:hover {
+                        background: #e8433c;
+                    }
+               }
+               .addCar {
+                    color: #999999;
+                    border: 1px solid #aaaaaa;
+                    background: #ffffff;
+                    &:hover {
+                        background: #eee;
+                    }
+               }
+           }
+        }
+       }
+       .goodsDynamic {
+           width: 40%;
+           font-size: 18px;
+           div {
+               margin: 20px 0;
+           }
+           .cost_price {
+            span {
+                font-size: 28px;
+                font-weight: bold;
+            }
+           }
+           .integral {
+               a {
+                   color: #666;
+                   margin-left: 30px;
+               }
+           }
+       }
+       .customerServices {
+           margin-top: 90px;
+           .customService {
+               display: inline-block;
+               background: url("../images/common-img/sprites_0.png") no-repeat;
+               width: 157px;
+               height: 47px;
+               background-position: -276px -355px;
+           }
+           .huliServer {
+               display: inline-block;
+               vertical-align: top;
+               font-size: 18px;
+               margin-left: 20px;
+               height: 47px;
+               line-height: 47px;
+               border-radius: 5px;
+               background: #666;
+               span {
+                   padding: 10px;
+                   color: #fff;
+               }
+           }
+       }
+   } 
+   .goodsStyle{
+    overflow: hidden;
+    }
+    .goodsStyle > div {
+        width: 33.33333333%;
+        line-height: 30px;
+        font-size: 18px;
+        float: left;
+    }.goodsStyle{
+    overflow: hidden;
+    }
+    .goodsStyle > div {
+        width: 33.33333333%;
+        line-height: 30px;
+        font-size: 18px;
+        float: left;
+    }
+    .classifyHeader{
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        border-bottom: 1px solid #ccc;
+        font-size: 24px;
+        margin-bottom: 24px;
+     
+    }
+    .detailsContent{
+        width: 100%;
+        height: 300px;
+        background: #efefef;
+    }
+    .deliverAddr{
+        font-size: 18px;
+    }
+    .goodsList{
+        width: 31%;
+        box-sizing: border-box;
+        border: 3px solid transparent;
+        color: #333;
+        transition: all .2s linear;
+        float: left;
+        margin-left: 20px;
+        
+    }
+    .goodsList:hover {
+        background-color: #ecf2e9;
+        border: 3px solid #82c353;
+    }
+    .goodsBaseInfo {
+        height: 64px;
+        line-height: 64px;
+        white-space: nowrap;
+    }
+    .goodsName {    
+        font-size: 18px;
+    }
+    .goodsImg {
+        width: 100%;
+        background-color: #acacac;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .oldPrice{
+        margin-left: 16px;
+        font-size: 22px;
+    }
+    .newPrice {
+        margin-left: 16px;
+        color: #d8170e;
+        font-size: 22px;
+    }
+    .slash_2 {
+        width: 96px;
+        height: 0px;
+        border-bottom: 2px solid #eb1212;
+        position: absolute;
+        top: 5px;
+        left: -90px;
+        transform: rotate(10deg);
+    }
+    .goodsList {
+        margin-bottom: 80px;
+    }
+}

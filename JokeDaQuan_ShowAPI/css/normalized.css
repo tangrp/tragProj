@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+a  { text-decoration: none; }
+
+ul,li{ list-style: none; }
+
+img{
+    /* 清除图片默认间隙 */
+    vertical-align: middle;
+}
+
+input,button{ outline: none;  border: none;}
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+/* 清除因浮动 引起的脱离文档流 */
+.clearFix {
+    zoom: 1;
+}
+.clearFix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.flex-row-col-cen { display: flex; display: -webkit-flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+
+
+
+
+
+
+
+
+
+
+
+

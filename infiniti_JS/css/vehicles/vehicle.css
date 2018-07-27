@@ -1,0 +1,70 @@
+@charset "utf-8";
+.container {
+    font-size: 12px;
+}
+
+.container .col_02 {
+    padding: 0 15px;
+    text-align: center;
+}
+.container .col_02 .pageHeader{
+    padding: 30px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.container .col_02 h3.title {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.container .col_02 .vehiclelisting {
+    width: 100%;
+    padding: 15px;
+}
+
+.container .col_02 .vehiclelisting li {
+    box-sizing: border-box;
+    float: left;
+    width: 33.333333333%;
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+
+.container .col_02 .vehiclelisting .vehicle_data {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .col_02  .vehicle_data h4.title{
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    user-select: none;
+}
+.container .col_02  .vehicle_data .price{
+    text-align: left;
+    margin-top: 20px;
+}
+.container .col_02  .price span{
+    display: block;
+    color: #747272;
+}
+.container .col_02  .price .full-price{
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.container .col_02 .more_link_Btn {
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid black;
+}

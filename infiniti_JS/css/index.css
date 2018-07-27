@@ -1,0 +1,262 @@
+@charset "utf-8";
+main .column01 {
+    background-color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+/* 轮播图 */
+.column01 .bannerFlash {
+    position: relative;
+    height: 625px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.column01 .bannerFlash .imgListWrap {
+    width: calc(8 * 100%);
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.column01 .bannerFlash .imgListWrap .imgDesc {
+    width: calc(100% / 8);
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.column01 .bannerFlash .imgListWrap .imgDesc img {
+    height: 100%;
+}
+
+.column01 .bannerFlash .imgDesc .img_inner {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    user-select: none;
+    padding: 40px;
+    width: 520px;
+    height: 260px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+.column01 .bannerFlash .imgDesc .img_inner_bg {
+    background: rgba(255, 255, 255, .7)
+}
+
+.column01 .bannerFlash .img_inner span {
+    display: block;
+    font-size: 32px;
+}
+
+.column01 .bannerFlash .img_inner .title {
+    font-size: 22px;
+}
+
+.more_link_Btn {
+    margin-top: 20px;
+    padding: 10px 80px;
+}
+
+/* 控制点 */
+.bannerFlash .dotWrap {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dotWrap .dot {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    margin-left: 18px;
+    cursor: pointer;
+    background-color: #e5e5e5;
+    transition: all .1s linear;
+    position: relative;
+}
+
+.dotWrap .dot::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    transition: all .2s linear;
+}
+
+.dotWrap .show::after {
+    background: orange;
+    width: 60px;
+}
+
+/* 上\下一页 */
+.bannerFlash .pointerWrap span {
+    display: inline-block;
+    width: 40px;
+    height: 75px;
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    background-size: cover !important;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s linear;
+}
+
+.bannerFlash .pointerWrap .pre {
+    left: -40px;
+    background: url(../img/index/arr_left.png) no-repeat center center;
+}
+
+.bannerFlash .pointerWrap .next {
+    right: -40px;
+    background: url(../img/index/arr_right.png) no-repeat center center;
+   
+}
+.bannerFlash:hover .pointerWrap .pre{
+    left: 7px;
+}
+.bannerFlash:hover .pointerWrap .next{
+    right: 7px;
+}
+
+/* 开启您的旅程 */
+.column01 .openTrip {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.column01 .openTrip .title {
+    font-size: 28px;
+}
+
+.column01 .openTrip .list {
+    margin-top: 40px;
+}
+
+.column01 .openTrip .list li {
+    width: 25%;
+    height: 66px;
+    float: left;
+    box-sizing: border-box;
+}
+.column01 .openTrip .list li:not(:last-child){
+    border-right: 1px solid #ccc;
+}
+.column01 .openTrip .list .clLink{
+    display: block;
+    width: 260px;
+    height: 61px;
+    margin: 0 auto;
+}
+
+.column01 .openTrip .list .IconWrap{
+    display: block;
+}
+.column01 .openTrip .list .IconWrap .mainIcon{
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+}
+
+.column01 .openTrip li:nth-child(1) .clLink .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat 4px -2px; 
+}
+
+.column01 .openTrip li:nth-child(1) .clLink:hover .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat 4px -41px; 
+}
+
+.column01 .openTrip li:nth-child(2) .clLink .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat -39px -2px; 
+}
+
+.column01 .openTrip li:nth-child(2) .clLink:hover .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat -39px -41px; 
+}
+
+.column01 .openTrip li:nth-child(3) .clLink .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat -87px -1px; 
+}
+
+.column01 .openTrip li:nth-child(3) .clLink:hover .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat -87px -41px; 
+}
+.column01 .openTrip li:nth-child(4) .clLink .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat -135px -1px; 
+}
+
+.column01 .openTrip li:nth-child(4) .clLink:hover .mainIcon{
+    background: url("../img/index/main_icon.png") no-repeat -135px -41px; 
+}
+
+.column01 .content_desc {
+    width: 100%;
+    height: 625px;
+    position: relative;
+    background: url("../img/index/indexall.jpg") no-repeat;
+}
+
+.content_desc .content_desc_inner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-top: 70px;
+    height: 100%;
+}
+
+.content_desc .content_desc_inner .cti_header {
+    user-select: none;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.content_desc .cti_header span:nth-child(1) {
+    font-size: 24px;
+    display: block;
+}
+
+.content_desc .content_desc_inner .cti_link {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content_desc .content_desc_inner .cti_link a {
+    padding: 10px 80px;
+}
+
+main .column02 .list li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+
+main .column02 .list .desc {
+    padding: 25px 0;
+}
+
+main .column02 .list .desc>span {
+    display: block;
+}
+
+main .column02 .list .desc>.title {
+    font-size: 22px;
+}
+
+main .column02 .list .more_link {
+    display: block;
+    padding: 12px 0;
+}

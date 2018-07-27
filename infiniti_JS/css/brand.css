@@ -1,0 +1,55 @@
+@charset "utf-8";
+.banner{
+    padding: 35px 0;
+    text-align: center;
+}
+.banner h3.title{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.banner p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.banner .bnVideo{
+    position: relative;
+    margin: 15px auto;
+}
+
+.banner .bnVideo .bdPlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+main .column02 .list li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+main .column02 .list .imgwrp{
+    width: 600px;
+    height: 337px;
+    overflow: hidden;
+}
+main .column02 .list .desc {
+    padding: 25px 0;
+}
+
+main .column02 .list .desc>span {
+    display: block;
+}
+
+main .column02 .list .desc>.title {
+    font-size: 22px;
+}
+
+main .column02 .list .more_link {
+    display: block;
+    padding: 12px 0;
+}

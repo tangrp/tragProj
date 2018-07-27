@@ -1,0 +1,41 @@
+header,footer{
+    display: none;
+}
+body{
+    width: 100%;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+main .container{
+    margin-top: 15%;
+}
+
+main .container form{
+    margin: 30px auto 0;
+    font-size: 0;
+}
+main .container form .searchIpt{
+    width: 70%;
+    height: 100px;
+    outline: none;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 36px;
+}
+
+main .container form button{
+    width: 20%;
+    height: 100px;
+    background: rgb(51,133,255);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: -1px;
+    top: 1px;
+    border: 1px solid rgb(51,133,255);
+    outline: none;
+    transition: all .1s linear;
+    font-size: 36px;
+}

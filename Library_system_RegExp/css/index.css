@@ -1,0 +1,108 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-width: 1226px;
+    background-color: #645a52;
+}
+h1{
+    color: #fff;
+    background: #524439;
+    padding: 40px;
+    border-bottom: 1px solid #3c3329;
+}
+.wrapper .tpL{
+    margin: 50px auto 30px;
+    text-align: center;
+    color: #eeeeee;
+    position: relative;
+}
+.wrapper .tpL #count{
+    margin-right: 20px;
+}
+.serachWrap{
+    display: inline-block;
+    position: relative;
+}
+.serachWrap #serach{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    padding: 5px  50px 5px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: #b1a79f;
+}
+.wrapper .tpL .serachWrap .iconSearce{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: url("../img/search (2).png") no-repeat center center;
+}
+
+
+#serach:focus{
+   border: 1px solid #eeeeee;
+}
+
+#serach::-webkit-input-placeholder{
+    color: #eeeeee;
+}
+
+.tableBox{
+    width: 75%;
+    margin: 0 auto;
+}
+
+table thead {
+    line-height: 40px;
+    background: #a3978f;
+}
+
+table tbody tr{
+    vertical-align: top;
+}
+table tbody tr:nth-child(odd){
+    background: #b1a79f;
+}
+table tbody tr:nth-child(even){
+    background: #a3978f;
+}
+
+table tbody tr td{
+    padding: 10px;
+}
+table tbody tr .desc{
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+table tbody tr:nth-child(odd) .desc:after{
+    background: linear-gradient(to right, transparent, #b1a79f 55%);
+}
+table tbody tr:nth-child(even) .desc:after{
+    background: linear-gradient(to right, transparent, #a3978f 55%);
+}
+
+
+table tbody tr .desc:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 20px;
+
+}

@@ -1,0 +1,42 @@
+@charset "utf-8";
+.goodsList li {
+    width: 240px;
+    padding: 30px 10px 15px;
+    border: 1px solid #eee;
+    float: left;
+    margin: 30px;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+.goodsList li:hover{
+    border-color:#eee;
+    box-shadow: 1px 1px 5px 0px #eee;
+    transform: translateY(-1px);
+}
+
+.goodsList .priceWp {
+    color: rgb(233, 3, 3);
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.goodsList a {
+    color: #666;
+}
+
+.goodsList .addToCBtn,.gotoCartBtn {
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    width: 90px;
+    height: 25px;
+    border: 1px solid rgb(182, 182, 182);
+    color: rgb(233, 3, 3);
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.goodsList .addToCBtn:hover ,.gotoCartBtn:hover{
+    border-color: rgb(233, 3, 3);
+}

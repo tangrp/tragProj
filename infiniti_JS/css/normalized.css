@@ -1,0 +1,39 @@
+@charset "UTF-8";
+* {
+    margin: 0; 
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+input,button{
+    outline: none;
+    border: none;
+}
+a  { text-decoration: none; }
+
+ul { list-style: none; }
+
+img{
+    /* 清除图片默认间隙 */
+    vertical-align: middle;
+}
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+/* 清除因浮动 引起的脱离文档流 */
+.clearFix {
+    zoom: 1;
+}
+.clearFix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}

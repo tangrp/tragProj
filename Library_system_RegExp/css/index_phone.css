@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    background-color: #645a52;
+}
+h1{
+    color: #fff;
+    background: #524439;
+    padding: 40px 0 40px;
+    border-bottom: 1px solid #3c3329;
+    font-size: 20px;
+}
+
+.wrapper{
+    width: 100%;
+}
+.wrapper .tpL{
+    margin: 50px auto 30px;
+    text-align: center;
+    color: #eeeeee;
+    position: relative;
+}
+.wrapper .tpL #count{
+    display: inline-block;
+}
+.serachWrap{
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    width: 57%;
+}
+.serachWrap #serach{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px  40px 5px 5px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: #b1a79f;
+}
+.wrapper .tpL .serachWrap .iconSearce{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: url("../img/search (2).png") no-repeat center center;
+}
+
+#serach:focus{
+    border: 1px solid #eeeeee;
+}
+
+#serach::-webkit-input-placeholder{
+    color: #eeeeee;
+}
+
+.tableBox{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+table thead {
+    line-height: 40px;
+    background: #a3978f;
+    font-size: 16px;
+}
+
+table tbody tr{
+    vertical-align: top;
+}
+table tbody tr:nth-child(odd){
+    background: #b1a79f;
+}
+table tbody tr:nth-child(even){
+    background: #a3978f;
+}
+
+table tbody tr td{
+    font-size: 14px;
+}
+table tbody tr{
+    width: 100%;
+}
+table tbody tr td div{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 10px 2px;
+    box-sizing: border-box;
+}
+table tbody tr td:nth-child(1) div{
+    width: 5vw;
+}
+
+table tbody tr td:nth-child(2) div{
+    width: 20vw;
+}
+table tbody tr td:nth-child(3) div{
+    width: 55vw;
+}
+
+table tbody tr td:nth-child(4) div{
+    width: 15vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+

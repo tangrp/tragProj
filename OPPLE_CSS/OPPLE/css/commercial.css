@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* 图片滚动 */
+.flash{
+    width: 100%;
+    heigh: 360px;
+    position: relative;
+}
+
+.flash .img_wrap .img_no{
+    height: 360px;
+}
+
+.flash .img_wrap .img_no1{
+    background: url("../images/commercial/1512722766.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.flash .img_wrap .img_no2{
+    background: url("../images/commercial/1468563411.jpg") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flash .img_wrap .img_no3{
+    background: url("../images/commercial/20150125.com_03.jpg") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.idot_wrap{
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    bottom: 10px;
+}
+
+.idot_wrap span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: white;
+    cursor: pointer;
+}
+
+.idot_wrap span:not(:last-child){
+    margin-right: 8px;
+}
+
+.idot_wrap span.active{
+    background: orange;
+}
+
+/* 商用照明能力(手风琴效果） */
+.content_top > h3{
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #333;
+    font-weight: normal;
+}
+
+.content_top ul{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+.content_top ul li.max_pic{
+    width: 46%;
+}
+
+.content_top ul .min_pic{
+    width: 17%;
+}
+
+.content_top ul li:not(:last-child){
+    margin-right: 1%;
+}
+
+.content_top ul li{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.content_top ul li img{
+    vertical-align: middle;
+}
+
+.content_top ul li .mask{
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+
+.content_top ul li .cur_mask{
+    width: 300px;
+    background: url("../images/commercial/yy.png") no-repeat;
+}
+
+.content_top ul li .mask  .ms_title{
+    padding: 10px 0;
+}
+
+.content_top  .ms_text{
+    display: none;
+}
+
+/* 手风琴效果 动画效果*/
+.content_top ul:hover li{
+    width: 17%;
+}
+
+.content_top ul:hover .mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+
+.content_top ul li:hover{
+    width: 46%;
+}
+
+.content_top ul li:hover .ms_text{
+    display: block;
+}
+
+.content_top ul li:hover .mask{
+    width: 300px;
+    background: url("../images/commercial/yy.png") no-repeat;
+}
+
+
+
+/* 行业案例 */
+.al_wrapper > h3{
+    font-size: 30px;
+    margin: 35px 0;
+    color: #333;
+    font-weight: normal;
+}
+
+.al_wrapper ul li{
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.al_wrapper ul li img{
+    vertical-align: middle;
+    transition: all .3s linear;
+}
+
+.al_wrapper li .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,black -50%,transparent 100%);
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.al_wrapper li  .infos .if_text{
+    line-height: 25px;
+    display: none;
+}
+
+.al_wrapper li  .infos{
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 40px 38px;
+}
+
+.al_wrapper li  .brand_chain{
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.al_wrapper li  .brand_chain .if_text{
+    display: block;
+}
+
+.al_wrapper li .brand_chain_mask{
+    opacity: 1;
+}
+
+.al_wrapper li .road{
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+.al_wrapper li .road .if_text{
+    display: block;
+}
+
+.al_wrapper li .road_mask{
+    opacity: 1;
+}
+
+.al_wrapper li .view{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) ;
+}
+
+.al_wrapper li .view .if_text{
+    display: block;
+}
+
+.al_wrapper li .view_mask{
+    opacity: 1;
+}
+
+.al_wrapper li  .infos .if_title{
+    padding: 15px 0;
+    font-size: 30px;
+}
+
+/* hover 事件*/
+.al_wrapper li:hover img{
+    transform: scale(1.1,1.1);
+}
+
+.al_wrapper li:hover .mask{
+    opacity: 1;
+}
+
+.al_wrapper li:hover .if_text{
+    display: block;
+}
+
+/* 商用照明 */
+.syzp{
+    margin: 40px auto;
+}
+
+.syzp a{
+    color: #333;
+}
+
+.syzp ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.syzp ul li{
+    width: 30%;
+    font-size: 18px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.syzp ul li img{
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.syzp ul li:not(:last-child){
+    border-right: 1px solid #e1e1e1;
+}
+
+.syzp ul li:hover a{
+    color: #0046aa;
+}

@@ -1,0 +1,532 @@
+@charset "utf-8";
+
+h3.title{
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+img{
+    vertical-align: middle;
+    transition: all .3s linear;
+}
+
+/*  banner 区域 */
+.banner_wrapper{
+    height: 360px;
+    background: url("../images/about/banner02.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* 企业介绍 */
+.com_profile .nav_menu{
+    font-size: 0;
+    text-align: center;
+}
+
+.com_profile .nav_menu li{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 38px;
+    color: #333;
+    transition: all .1s linear;
+    position: relative;
+}
+
+.com_profile .nav_menu li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e1e1e1;
+    box-sizing: border-box;
+}
+
+.com_profile .nav_menu li:nth-child(1){
+    background: #004baa;
+    color: white;
+}
+
+.com_profile .nav_menu li:nth-child(1) a{
+    border: 2px solid transparent;
+}
+.com_profile .nav_menu li:not(:last-child){
+    margin-right: 9px;
+}
+
+.com_profile .nav_menu li:hover a{
+    border: 2px solid transparent;
+}
+
+.com_profile .nav_menu li:hover{
+    background: #004baa;
+    color: white;
+}
+
+.com_profile > h4{
+    font-size: 22px;
+    color: #333;
+    padding:50px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.com_profile .subnav_menu{
+    text-align: center;
+    font-size: 0;
+}
+
+.com_profile .subnav_menu li{
+    display: inline-block;
+    border-right: 1px solid #e1e1e1;
+    position: relative;
+}
+
+.com_profile .subnav_menu li a{
+    padding: 0 23px;
+    color: #333;
+    font-size: 16px;
+}
+
+.com_profile .subnav_menu img{
+    margin: -2px 5px 0 0;
+}
+
+.com_profile .subnav_menu .hide{
+    display: none;
+}
+
+.com_profile .subnav_menu li.active a{
+    color: #004baa;
+}
+
+.com_profile .subnav_menu li.active .show{
+    display: none;
+}
+
+.com_profile .subnav_menu li.active .hide{
+    display: inline;
+}
+
+/* hover事件*/
+.com_profile .subnav_menu li:hover .show{
+    display: none;
+}
+
+.com_profile .subnav_menu li:hover .hide{
+    display: inline;
+}
+
+.com_profile .subnav_menu li:hover a{
+    color: #004baa;
+}
+
+.com_profile .detail_wrapper {
+    background: #fafafa;
+    margin: 25px 0 30px 0;
+    position: relative;
+}
+
+.com_profile .detail_wrapper .text_pic{
+    width: 36.5%;
+    overflow: hidden;
+    background: red;
+}
+
+.com_profile .detail_wrapper  .text{
+    position: absolute;
+    width: 63%;
+    padding: 0 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    box-sizing: border-box;
+}
+
+.com_profile .detail_wrapper  .text > h4{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 27px;
+}
+
+.com_profile .detail_wrapper  .text > p{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+.com_profile .detail_wrapper .text_pic:hover img{
+    transform: scale(1.1,1.1);
+}
+
+/* 创新发展 */
+.development{
+    background: #e1e1e1;
+    padding: 47px 0 55px 0;
+}
+
+.development .pic_show .detail{
+    background: white;
+    padding: 30px;
+    width: 860px;
+    height: 590px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.development .pic_show .detail .detail_list{
+    position: relative;
+}
+
+.development .pic_show .detail .detail_list li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.development .pic_show .detail .detail_list li.active{
+    opacity: 1;
+}
+
+.development .pic_show .detail_list a{
+    display: inline-block;
+    margin-top: 14px;
+    color: #333;
+    font-size: 14px;
+}
+
+.development .pic_show .list{
+    padding: 30px 20px;
+    background: white;
+    width: 230px;
+    height: 590px;
+    text-align: center;
+    position: relative;
+}
+
+.development .pic_show .list .last{
+    width: 23px;
+    height: 13px;
+    display: block;
+    background: url("../images/about/l.png");
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.development .pic_show .list .next{
+    width: 23px;
+    height: 13px;
+    display: block;
+    background: url("../images/about/r.png");
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.development .pic_show .pic_list {
+    height: 580px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.development .pic_show .list li{
+    margin-top: 8px;
+}
+
+.development .pic_show .list img{
+    width: 220px;
+}
+
+/* 办公环境 */
+.office{
+    padding: 47px 0 40px 0;
+}
+
+.office .left_flash{
+    position: relative;
+}
+
+.office .left_flash ul{
+    position: relative;
+}
+
+.office .left_flash li{
+    overflow: hidden;
+}
+
+.office .left_flash li:not(:first-child){
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.office .left_flash .last{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.office .left_flash .last img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.office .left_flash .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.office .left_flash .next img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.office .left_flash .hide{
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.office .left_flash .last:hover .hide{
+    opacity: 1;
+}
+
+.office .left_flash .next:hover .hide{
+    opacity: 1;
+}
+
+.office .right_wrapper ul{
+    width:595px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.office .right_wrapper li{
+    position: relative;
+    overflow: hidden;
+}
+
+.office .right_wrapper li:nth-child(1){
+    margin-bottom: 10px;
+}
+
+/* 图片上方透明背景 + 文字*/
+.addmask li .text {
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 18px;
+    box-sizing: border-box;
+    transition: all .3s linear;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.right_wrapper .addmask li:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+/* 荣誉历程 */
+.year_list {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.honor .year_list .last{
+    position: relative;
+    margin-top: -6px;
+}
+
+.honor .year_list .last .hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.honor .year_list .next{
+    position: relative;
+    margin-top: -6px;
+}
+
+.honor .year_list .next .hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.honor .year_list .hide{
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.honor .year_list .last:hover .hide{
+    opacity: 1;
+}
+
+.honor .year_list .next:hover .hide{
+    opacity: 1;
+}
+
+.honor .year_list .fl_center{
+    width: 1140px;
+    overflow: hidden;
+    background: url("../images/about/xian.jpg") repeat-x top 9px center;
+}
+
+.honor .year_list .fl_center ul{
+    width: 2000px;
+    font-size: 0;
+}
+
+.honor .year_list li{
+    display: inline-block;
+    padding: 0 19px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.honor .year_list li .dian{
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    background: url("../images/about/dian.png") no-repeat center center;
+}
+
+.honor .year_list li p{
+    margin-top: 7px;
+    font-size: 14px;
+    color: #6e6e6e;
+}
+
+.honor .year_list li.active .dian{
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    background: url("../images/about/dian01.png") no-repeat center center;
+}
+
+.honor .year_list li.active p{
+    color: #004baa;
+}
+
+.honor .year_list li:hover .dian{
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    background: url("../images/about/dian01.png") no-repeat center center;
+}
+
+.honor .year_list li:hover p{
+    color: #004baa;
+}
+
+.honor .year .year_detail li{
+    margin-top: 25px;
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+.honor .year .year_detail .month{
+    margin-left: 15px;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    font-size: 16px;
+    color: #333;
+}
+
+.honor{
+    background: #e1e1e1;
+    padding: 47px 0 40px 0;
+}
+
+.honor_wrapper > h4{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 27px;
+    margin: 48px 0 25px;
+}
+
+.honor .hn_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.honor .hn_list li{
+    /*IE 兼容问题*/
+    /*width: calc(100% / 6);*/
+    width: 16.66%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.honor .hn_list li > p{
+    padding: 10px 20px 0 20px;
+    font-size: 12px;
+    color: #6e6e6e;
+    line-height: 18px;
+}
+
+/* 其它服务 */
+.other_service{
+    margin: 40px auto;
+}
+
+.other_service a{
+    color: #333;
+}
+
+.other_service ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.other_service ul li{
+    width: 30%;
+    font-size: 18px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.other_service ul li img{
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.other_service ul li:not(:last-child){
+    border-right: 1px solid #e1e1e1;
+}
+
+.other_service ul li:hover a{
+    color: #0046aa;
+}

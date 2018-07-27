@@ -1,0 +1,156 @@
+@charset "utf-8";
+.lg_rg {
+    height: 625px;
+    background: url("../img/index/indexFlash03.jpg") fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.lg_rg a {
+    color: black;
+}
+
+.lg_rg a:hover {
+    text-decoration: underline;
+}
+
+.lg_rg .com_lg_rg {
+    margin-top: 40px;
+    width: 470px;
+    background: rgba(255, 255, 255, .7);
+    padding: 25px 0;
+    box-sizing: border-box;
+    margin-right: 200px;
+}
+
+.lg_rg .com_lg_rg .title {
+    display: block;
+    font-size: 28px;
+    padding: 15px 0 20px;
+}
+
+.lg_rg .textWrap {
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.lg_rg input:not([name="rmbPsd"]) {
+    width: 300px;
+    height: 26px;
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.lg_rg .loginWrap input:not([name="rmbPsd"]) {
+    margin-bottom: 20px;
+}
+
+.lg_rg input:focus {
+    border: 1px solid #0066ff;
+}
+
+.lg_rg button {
+    width: 314px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: #fff;
+    color: black;
+    transition: all .1s linear;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.lg_rg button:hover {
+    background: black;
+    color: #fff;
+}
+
+.lg_rg .loginWrap {
+    margin-top: 70px;
+}
+
+.lg_rg .registerWrap {
+    display: none;
+}
+
+.lg_rg .registerWrap>div {
+    position: relative;
+}
+
+.lg_rg  .msg {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    height: 20px;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+.lg_rg .lgMsg{
+    margin: 10px auto 3px;
+}
+
+.registerWrap .randomWrap {
+    width: 312px;
+    margin: 0 auto;
+    text-align: left;
+    cursor: pointer;
+}
+
+.registerWrap .randomWrap .inputCaptcha {
+    width: 100px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.registerWrap .randomWrap .canvasBox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 登录\注册动画 */
+.lgdot::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '登录中...\A登录中..\A登录中.';
+    line-height:45px;
+    white-space: pre-wrap;
+    animation: dot 3s infinite step-start both;
+    width: 55px;
+    text-align: left;
+    overflow: hidden;
+    transform: translate(-50%,-17.5%);
+}
+
+.rgdot::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '注册中...\A注册中..\A注册中.';
+    line-height:45px;
+    white-space: pre-wrap;
+    animation: dot 3s infinite step-start both;
+    width: 55px;
+    text-align: left;
+    overflow: hidden;
+    transform: translate(-50%,-17.5%);
+}
+
+@keyframes dot {
+    33% {
+        transform: translate(-50%,-84%);
+    }
+    66% {
+        transform: translate(-50%,-50.5%);
+    }
+}

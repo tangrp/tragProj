@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品管理系统</title>
+    <link rel="stylesheet" href="./css/normalized.css">
+    <link rel="stylesheet" href="./css/LHYAlertView.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>商品管理系统</legend>
+            <div class="content">
+                <div class="addShipBtn">添加商品</div>
+                <table class="data_list" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>商品编号</th>
+                            <th>商品名称</th>
+                            <th>商品分类</th>
+                            <th>商品库存</th>
+                            <th>商品销售</th>
+                            <th>商品描述</th>
+                            <th>更新时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+    </div>
+    <div class="mask">
+        <div id="goods">
+            <form action="javascript:void(0)" id="goodsform">
+                    <input type="text" class="goods_input goods_num" placeholder="请输入商品编号">
+                    <input type="text" class="goods_input goods_name" placeholder="请输入商品名称">
+                    <input type="text" class="goods_input goods_type" placeholder="请输入商品分类">
+                    <input type="text" class="goods_input goods_stock" placeholder="请输入商品库存">
+                    <input type="text" class="goods_input goods_price" placeholder="请输入商品单价">
+                    <input type="text" class="goods_input goods_desc" placeholder="请输入商品描述">
+                    <button class="add_edit_btn">确认添加</button>
+            </form>
+            <div class="goods_close">✖</div>
+        </div>
+        
+    </div>
+    
+<script src="./js/tools.js"></script>
+<script src="./js/function.js"></script>
+<script src="./js/LHYAlertView.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

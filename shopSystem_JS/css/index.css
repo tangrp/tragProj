@@ -1,0 +1,138 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.container{
+    width: 100%;
+    font-size: 14px;
+    height: 200%;
+    /* position: relative; */
+}
+fieldset{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 1260px;
+    min-height: 480px;
+    border: 1px solid #333;
+}
+legend{
+    font-size: 28px;
+    margin-left: calc(5% - 8px);
+    padding: 0 8px;
+}
+.content{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+/* 添加按钮*/
+.addShipBtn{
+    width: 120px;
+    color: #fff;
+    background: #008000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px 0;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+.addShipBtn:hover{
+    background: #008c00;
+}
+/* 表格 */
+.data_list{
+    width: 100%;
+    border-collapse: collapse;
+    margin:20px 0;
+}
+.data_list thead{
+    background-color: #eee;
+}
+.data_list thead th,.data_list tbody td{
+    border: 1px solid #d3d3d3;
+    padding: 10px 8px;
+}
+
+.data_list tbody .btn{
+    display: inline-block;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.data_list tbody  .editBtn{
+    background: #ffa500;
+}
+.data_list tbody  .delBtn{
+    background: #ff0000;
+}
+
+/* 遮罩 */
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+}
+.mask #goods{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.mask #goodsform .goods_input{
+    outline: none;
+    padding: 7px;
+    box-sizing: border-box;
+    width: 240px;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #d3d3d3;
+}
+.mask #goodsform .goods_input:focus{
+    box-shadow: inset 0 0 5px 0px #008c00;
+    border: 1px solid transparent;
+}
+.mask #goodsform .goods_input::-webkit-input-placeholder{
+    color: #d3d3d3;
+}
+
+.mask #goodsform .add_edit_btn{
+    outline: none;
+    border: none;
+    width: 240px;
+    height: 40px;
+    background: #008c00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mask #goods .goods_close{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    line-height: 30px;
+    background: white;
+}
+.mask #goods .goods_close:hover{
+    border: 1px solid #333; 
+}

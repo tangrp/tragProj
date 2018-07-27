@@ -1,0 +1,115 @@
+#main {
+    margin: 45px auto;
+    .personinfo_choose {
+        font-size: 18px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 10px;
+        span {
+            margin: 0 35px 0;
+            a {
+                color: #555555;
+                padding: 0 15px 10px 15px;
+                &.show {
+                    color: #de3d36;
+                    border-bottom: 2px solid #de3d36;
+                }
+            }
+            a:hover {
+                color: #de3d36;
+                border-bottom: 2px solid #de3d36;
+            }
+        }
+    }
+    .order_Box {
+        text-align: center;
+        border: 1px solid #bbbbbb;
+        border-bottom: none;
+        .order_item {
+            border-bottom: 1px solid #bbbbbb;
+            p {
+                display: inline-block;
+                font-size: 18px;
+                margin: 13px 0;
+                width: 135px;
+            }
+        }
+        .order {
+            color: #888;
+            border-bottom: 1px solid #bbbbbb;
+            .ordeListIfo {
+                box-sizing: border-box;
+                display: inline-block;
+                font-size: 15px;
+                width: 135px;
+                height: 110px;
+                line-height: 100px;
+                vertical-align: top;
+                position: relative;
+                .order_img {
+                    display: inline-block;
+                    height: 60%;
+                }
+                .order_number {
+                    position: absolute;
+                    top: 90%;
+                    transform: translateY(-50%);
+                    left: 35%;
+                }
+            }
+            .operate {
+                line-height: 50px;
+                .oBtn-wrap:first-child{
+                    border-bottom: 1px solid #cccccc;
+                }
+                span {
+                    display: inline-block;
+                    position: relative;
+                    .btn {
+                        color: #888;
+                        cursor: pointer;
+                        &:hover {
+                            color: royalblue;
+                        }
+                    }
+                }
+                .ortBtn {
+                    padding-right: 5px;
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 25px;
+                        background: #ccc;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                    }
+                }
+                .delBtn a:hover {
+                    color: #de3d36;
+                }
+            }
+        }
+    }
+    .remarks {
+        font-size: 14px;
+        color: #888;
+        text-align: right;
+    }
+    .back {
+        text-align: center;
+        margin: 30px 0 50px;
+        button {
+            font-size: 25px;
+            color: #ffffff;
+            background: #838281;
+            width: 380px;
+            height: 55px;
+            cursor: pointer;
+            &:hover {
+                background: #82c353;
+            }
+        }
+    }
+}

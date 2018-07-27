@@ -1,0 +1,70 @@
+{
+    "goodsLs": [{
+            "SgModel": "D610",
+            "gdsTitle": "【狂欢！狂欢！】入门全画幅单反，不到6K！不到6K！钜惠直降超千元！抢到就是赚！618尼康“high”场直达！",
+            "gdsImgSrc": "D610List.jpg",
+            "gdsPrice": "5688",
+            "gdsIfocDesPic": [{
+                    "smallImg": ["D610desc01.jpg", "D610desc02.jpg", "D610desc03.jpg"]
+                },
+                {
+                    "bigImg": ["D610desc01_b.jpg", "D610desc02_b.jpg", "D610desc03_b.jpg"]
+                }
+            ],
+            "goodsDesc": "尼康（Nikon） D610 机身 入门全画幅 单反相机 约2,426万有效像素 39点自动对焦"
+        }, {
+            "SgModel": "80D",
+            "gdsTitle": "【618倒计24小时】【相机王牌 买佳能 上京东 选自营 更放心】父亲节、端午节、世界杯，即使你遗忘了618，我还在等你~经典中端旗舰机",
+            "gdsImgSrc": "80DList.jpg",
+            "gdsPrice": "8079",
+            "gdsIfocDesPic": [{
+                    "smallImg": ["80Ddesc01.jpg", "80Ddesc02.jpg", "80Ddesc03.jpg", "80Ddesc04.jpg", "80Ddesc05.jpg"]
+                },
+                {
+                    "bigImg": ["80Ddesc01_b.jpg", "80Ddesc02_b.jpg", "80Ddesc03_b.jpg", "80Ddesc04_b.jpg", "80Ddesc05_b.jpg"]
+                }
+            ],
+            "goodsDesc": "佳能（Canon）EOS 80D 单反套机（EF-S 18-200mm f/3.5-5.6 IS） 2420万有效像"
+        }, {
+            "SgModel": "200D",
+            "gdsTitle": "影像摄配盛典 狂欢继续！一元拍立得继续秒",
+            "gdsImgSrc": "200DList.jpg",
+            "gdsPrice": "4058",
+            "gdsIfocDesPic": [{
+                    "smallImg": ["200Ddesc01.jpg", "200Ddesc02.jpg", "200Ddesc03.jpg", "200Ddesc04.jpg"]
+                },
+                {
+                    "bigImg": ["200Ddesc01_b.jpg", "200Ddesc02_b.jpg", "200Ddesc03_b.jpg", "200Ddesc04_b.jpg"]
+                }
+            ],
+            "goodsDesc": "佳能（CANON）EOS 200D 单反相机 数码照相机 入门级套机 白色18-55 STM镜头 "
+        }, {
+            "SgModel": "D5300",
+            "gdsTitle": "【狂欢！狂欢！】入门全画幅单反，不到6K！不到6K！钜惠直降超千元！抢到就是赚！618尼康“high”场直达！",
+            "gdsImgSrc": "D5300List.jpg",
+            "gdsPrice": "4279",
+            "gdsIfocDesPic": [{
+                    "smallImg": ["D5300desc01.jpg", "D5300desc02.jpg"]
+                },
+                {
+                    "bigImg": ["D5300desc01_b.jpg", "D5300desc02_b.jpg"]
+                }
+            ],
+            "goodsDesc": "尼康（Nikon）D5300单反套机（AF-S 18-140mmf/3.5-5.6G ED VR 镜"
+        }, {
+            "SgModel": "iPhone 8 plus",
+            "gdsTitle": "【狂欢！狂欢！】入门全画幅单反，不到6K！不到6K！钜惠直降超千元！抢到就是赚！618尼康“high”场直达！",
+            "gdsImgSrc": "iPhone8PList.jpg",
+            "gdsPrice": "5599",
+            "gdsIfocDesPic": [{
+                    "smallImg": ["iPhone8Pdesc01.jpg","iPhone8Pdesc02.jpg"]
+                },
+                {
+                    "bigImg": ["iPhone8Pdesc01_b.jpg","iPhone8Pdesc02_b.jpg"]
+                }
+            ],
+            "goodsDesc": "Apple iPhone 8 Plus 64GB 红色特别版 移动联通电信4G手机"
+        }
+
+    ]
+}
