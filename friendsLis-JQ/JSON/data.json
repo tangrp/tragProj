@@ -1,0 +1,68 @@
+{
+    "friendsIfoc": [{
+        "groupName": "MY Friend",
+        "listIfoc": [{
+            "frdsImgUrl": "./img/t1.png",
+            "frdsName": "城市",
+            "frdsDesc": "城市夜光亮整夜光，如同少年不惧岁月长城市夜光亮整夜光，如同少年不惧岁月长",
+            "online": 1
+        }, {
+            "frdsImgUrl": "./img/t2.jpeg",
+            "frdsName": "一万丈",
+            "frdsDesc": "天台倾倒理想一万丈",
+            "online": 1
+        }, {
+            "frdsImgUrl": "./img/t5.jpg",
+            "frdsName": "异乡限时",
+            "frdsDesc": "她尝遍了每个异乡限时赠送的糖",
+            "online": 0
+        }, {
+            "frdsImgUrl": "./img/t4.png",
+            "frdsName": "等她归来",
+            "frdsDesc": "等她归来坐下对我讲",
+            "online": 1
+        }]
+    },{
+        "groupName": "陌生人",
+        "listIfoc": [{
+            "frdsImgUrl": "./img/t5.jpg",
+            "frdsName": "城市",
+            "frdsDesc": "城市夜光亮整夜光，如同少年不惧岁月长",
+            "online": 1
+        }, {
+            "frdsImgUrl": "./img/t4.png",
+            "frdsName": "下对",
+            "frdsDesc": "等她归来坐下对我讲",
+            "online": 1
+        },{
+            "frdsImgUrl": "./img/t5.jpg",
+            "frdsName": "每个",
+            "frdsDesc": "她尝遍了每个异乡限时赠送的糖",
+            "online": 0
+        }]
+    },{
+        "groupName": "丫丫丫",
+        "listIfoc": [{
+            "frdsImgUrl": "./img/t1.png",
+            "frdsName": "城市",
+            "frdsDesc": "城市夜光亮整夜光，如同少年不惧岁月长",
+            "online": 1
+        }, {
+            "frdsImgUrl": "./img/t2.jpeg",
+            "frdsName": "一万丈",
+            "frdsDesc": "天台倾倒理想一万丈",
+            "online": 0
+        }, {
+            "frdsImgUrl": "./img/t5.jpg",
+            "frdsName": "糖",
+            "frdsDesc": "她尝遍了每个异乡限时赠送的糖",
+            "online": 0
+        }, {
+            "frdsImgUrl": "./img/t4.png",
+            "frdsName": "等她来",
+            "frdsDesc": "等她归来坐下对我讲",
+            "online": 1
+        }]
+    }]
+
+}
