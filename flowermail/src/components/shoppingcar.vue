@@ -3,10 +3,8 @@
         <div class="topHead">
             <span class="cText">购物车</span>                
             <div class="toprbtn">
-                <el-button type="text" v-if="edAtlFlag" class="editBtn" @click="edAtlFlag = false" :disabled="edtFlag">编辑</el-button>
-                <el-button type="text" v-else class="editBtn" @click="edAtlFlag = true;" >取消</el-button>
-                <!-- <span v-if="edAtlFlag" class="editBtn" @click="edAtlFlag = false">编辑</span>
-                <span v-else class="editBtn" @click="edAtlFlag = true;">取消</span> -->
+                <el-button type="text" v-if="edAtlFlag" class="editBtn" @click="editFun" :disabled="edtFlag">编辑</el-button>
+                <el-button type="text" v-else class="editBtn" @click="cancelEdit" >取消</el-button>
                 <span class="msgBtb"><img src="../assets/icon/msgIcon@2x.png"></span>
             </div>
         </div>
@@ -28,7 +26,7 @@
                                     <span class="orFLPrice">{{item.orFLPrice | addsymbol}}</span>
                                 </span>
                                 <span class="numtl">
-                                    <el-input-number class="numIpt" size="mini" v-model="item.buyNumb" :max="Number(item.stock)" :min="nmin"></el-input-number>
+                                    <el-input-number @change="iptNubFun(item.buyNumb)" class="numIpt" size="mini" v-model="item.buyNumb" :max="Number(item.stock)" :min="nmin"></el-input-number>
                                 </span>
                             </div>
                         </Col>
@@ -44,16 +42,13 @@
                             合计：
                             <span class="totalMoney">{{allMy | addsymbol}}</span>
                         </span>
-                        <!-- <span v-else >删除</span>   -->
                         <Button v-else class="delBtn" @click="delData" type="error">删除</Button>
                         <Button  :class="{'total':'edAtlFlag','totaldsb':!edAtlFlag}" type="default" @click="totalGo" :disabled="!edAtlFlag">结算({{sld}})</Button>
-                        <!-- <span class="total">结算({{sld}})</span>                         -->
                     </div>
                 </div>
             </div>
             <div class="spCarept" v-else></div>
         </div>
-        <Tabbar/>
     </div>
 </template>
 <script>
@@ -76,8 +71,7 @@ export default {
            edAtlFlag:true,
            loginUser:'',
            edtFlag:true,
-           aChkFlag:false
-           
+           aChkFlag:false        
        }
    },
    created(){
@@ -180,11 +174,20 @@ export default {
                     }                   
                 }
             })
+        },
+        editFun(){
+            this.edAtlFlag = false;
+            this.aChkFlag = false;  
+            $("input[type=checkbox]").prop('checked',false);            
+        },
+        cancelEdit(){
+            this.edAtlFlag = true;
+            $("input[type=checkbox]").prop('checked',false);  
+        },
+        iptNubFun(val){
+            this.totalF()
         }
     },
-   mounted(){
-        $(".navlist .shopcIcon").css("backgroundImage",`url(${require('../assets/icon/shopcarIconA@2x.png')})`)
-   }
 }
 </script>
 <style scoped>

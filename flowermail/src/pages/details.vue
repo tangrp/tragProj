@@ -1,6 +1,6 @@
 <template>
-    <div class="details content">
-        <div class="wrapRow01">
+    <div class="details container">
+        <div class="wrapRow01 content">
             <div class="linksBtn">
                 <span class="lbtn goback" @click="goback">
                     <img  src="../assets/icon/descback@2x.png">
@@ -126,8 +126,7 @@
                     </ul>
                 </div>
             </div>
-        </div>       
-
+        </div>
          <div class="btmBtn">
             <Row>
                 <Col class="btnWrp" span="4">
@@ -154,54 +153,43 @@
                 </Col>
             </Row>
          </div>
-
-         <div class="buyWrap" v-if="isShowBuy">
-             <div class="mask" @click="isShowBuy = !isShowBuy"></div>
-             <div class="buyIcosB">
-                 <Row class="buyifsBox">
-                     <Col class="imgw " span="8">
-                         <img :src="require('../assets/list/'+contentArrImg[0])" >
-                     </Col>
-                     <Col class="stock" span="10">
-                         <span class="price">{{contentArr[0].flPrice | addSymbols}}</span>
-                         <span>库存{{contentArr[0].stock}}件</span>
-                         <span>请选择购买数量</span>
-                    </Col>
-                    <Col class="close" span="6">
-                        <img  @click="isShowBuy = !isShowBuy" src="../assets/icon/closeIcon@2x.png" alt="">
-                    </Col>
-                 </Row>
-                 <div class="buyNum">
-                     <span>购买数量</span>
-                     <el-input-number class="numIpt" size="mini" v-model="buyNumb" :max="Number(contentArr[0].stock)" :min="nmin"></el-input-number>
-                 </div>
-                <div class="btmBtn buybtmBtn" @click="cancleBuy">
-                    确定
-                </div>
-             </div>
-
+         <div class="bottomBuy">             
+                <div class="buyWrap" v-if="isShowBuy">
+                    <div class="mask" @click="isShowBuy = !isShowBuy"></div>
+                    <transition name="slideB">
+                        <div class="buyIcosB" v-if="isShowBuy">
+                            <Row class="buyifsBox">
+                                <Col class="imgw " span="8">
+                                    <img :src="require('../assets/list/'+contentArrImg[0])" >
+                                </Col>
+                                <Col class="stock" span="10">
+                                    <span class="price">{{contentArr[0].flPrice | addSymbols}}</span>
+                                    <span>库存{{contentArr[0].stock}}件</span>
+                                    <span>请选择购买数量</span>
+                                </Col>
+                                <Col class="close" span="6">
+                                    <img  @click="isShowBuy = !isShowBuy" src="../assets/icon/closeIcon@2x.png" alt="">
+                                </Col>
+                            </Row>
+                            <div class="buyNum">
+                                <span>购买数量</span>
+                                <el-input-number class="numIpt" size="mini" v-model="buyNumb" :max="Number(contentArr[0].stock)" :min="nmin"></el-input-number>
+                            </div>
+                            <div class="btmBtn buybtmBtn" @click="cancleBuy">
+                                确定
+                            </div>
+                        </div>
+                    </transition>
+                </div> 
+            
          </div>
+
     </div>
 </template>
 <script>
-document.addEventListener("DOMContentLoaded",function(){
-    /* flash */
-        var mySwiper = new Swiper ('.swiper-container', {
-            loop: true,
-            autoplay:true,
-            // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-                paginationClickable :true,
-                clickable:true,
-                type: 'bullets',  
-            },
-        })
-},false)
-
-import 'swiper/dist/css/swiper.css'
-import Swiper  from 'swiper'
-
+    import $ from 'jquery';
+    import 'swiper/dist/css/swiper.css'
+    import Swiper  from 'swiper'
 export default {
    name:"Details",
         data(){
@@ -210,6 +198,7 @@ export default {
             contentArrImg:[],
             comtentArrComent:[],
             isShowBuy:false,
+            isShowBuyB:true,
             buyNumb:1,            
             nmin:1,
             buyList:[]
@@ -231,6 +220,19 @@ export default {
         })  
         
     }, 
+    mounted(){
+        let mySwiper = new Swiper ('.swiper-container', {
+            loop: true,
+            autoplay:true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                paginationClickable :true,
+                clickable:true,
+                type: 'bullets',  
+            },
+        })
+    },
     methods:{
         goback(){
             this.$router.go(-1);
@@ -306,17 +308,17 @@ export default {
 <style scoped>
 .swiper-container{
     font-size:0;
+    height: 18rem;
 }
 .swiper-container img{
     width:100%;
+    height: 100%;
 }
 .details{
     background-color:#f1f1f1;
     position:relative;
 }
-.wrapRow01{
-    position:relative;
-}
+
 .wrapRow01 .linksBtn{
     position:absolute;
     width:100%;    
@@ -372,7 +374,6 @@ export default {
 .priceWrap .price{
     color:#ff5c4f;
     font-size:28px;
-    /* font-weight:bold; */
 }
 .priceWrap .srpPrice{
     border:1px solid #f5bf02;
@@ -579,6 +580,26 @@ export default {
     line-height: 66px;
     letter-spacing: 2px;
     font-size: 14px;
+}
+.bottomBuy{
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    background-color: #f5bf02;
+}
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slideB-enter-active {
+  transition: all .3s ease;
+}
+.slideB-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slideB-enter, .slideB-leave-to{
+  transform: translateX(10px);
+  opacity: 0;
+  bottom: -200px;
 }
  </style>
 

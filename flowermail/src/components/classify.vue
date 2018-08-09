@@ -21,21 +21,16 @@
                 <router-view name="Classitytype"/>
             </div>
         </div>        
-        <Tabbar/>
     </div>
 </template>
 <script>
-import Tabbar from '../components/tabbar'
 import $ from 'jquery'
 export default {
    name:"Classify",
-   components:{Tabbar},
+   components:{},
    data(){
        return{}
    },
-   mounted(){
-        $(".navlist .classifyIcon").css("backgroundImage",`url(${require('../assets/icon/classityIconA@2x.png')})`)
-   }
 }
 </script>
 <style scoped>
@@ -70,9 +65,5 @@ export default {
     overflow-y: scroll;
     padding-top: 5px;
 }
-/* .navlist .classifyIconH{
-    background: url("../assets/icon/classityIconA@2x.png") no-repeat center center;  
-    background-size: 90%;  
-} */
 </style>
 

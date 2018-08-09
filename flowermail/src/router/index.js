@@ -16,6 +16,7 @@ import Register from '@/pages/register'
 import Searchres from '@/pages/searchres'
 import SearchClassify from '@/pages/searchClassify'
 import SecCph from '@/pages/secCph'
+import store from '../store'
 
 Vue.use(Router)
 
@@ -25,14 +26,26 @@ export default new Router({
       path: '/',
       name: 'home',
       components: {
-        default:Home}
+        default:Home,
+        Tabbar
+      },
+      beforeEnter(to,from,next){
+        store.commit("tabbarhomeIcon");
+        next();
+      }
     },
     {
       path: '/classify',
       name: 'classify',
       redirect:'/classify/obj',
       components: {
-        default:Classify},
+        default:Classify,
+        Tabbar
+      },
+      beforeEnter(to,from,next){
+        store.commit("tabbarclassifyIcon");
+        next();
+      },
       children:[
         {
           path:'flowers',
@@ -54,19 +67,31 @@ export default new Router({
             Classitytype
           },
         },
-    ]
+      ]
     },
     {
       path: '/shoppingcar',
       name: 'shoppingcar',
       components: {
-        default:Shoppingcar}
+        default:Shoppingcar,
+        Tabbar
+      },
+      beforeEnter(to,from,next){
+        store.commit("tabbarshopcIcon");
+        next();
+      },
     },
     {
       path: '/mine',
       name: 'mine',
       components: {
-        default:Mine}
+        default:Mine,
+        Tabbar
+      },
+      beforeEnter(to,from,next){
+        store.commit("tabbarIcon");
+        next();
+      },
     },
     {
       path: '/details',

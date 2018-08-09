@@ -61,7 +61,6 @@ export default {
 .clsContent .listBox .text{
     display: inline-block;
     padding: 5px 0;
-
 }
 .listBox .ifocs{
     text-align: left;

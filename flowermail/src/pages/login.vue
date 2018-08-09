@@ -9,7 +9,6 @@
         <div class="loginBox">
             <div  class="lgIpt"><Icon class="icon" size="18" type="ios-person-outline" /><input v-model="user" placeholder="请输入用户名"/></div>
             <div class="lgIpt"><Icon  class="icon" size="18" type="ios-lock-outline" /><input v-model="psd" type="password"  placeholder="请输入密码"/></div>            
-            <!-- <div><button class="logonGO" @click="login"  type="button">登录</button></div> -->
             <div><el-button :plain="true"  @click="login()"   :disabled="lgDisbf()" :loading="lgLdg" class="logonGO" >登录</el-button></div>
         </div>
         <div class="regLink" @click="goRegi">没有账号？注册</div>

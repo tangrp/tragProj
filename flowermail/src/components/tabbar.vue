@@ -2,16 +2,16 @@
     <div class="navbar btmBtn">
        <ul class="navlist">
            <li @click="loginChkId()">
-               <a><span class="barIcon homeIcon"></span>主页</a>
+               <a><span :class='{"barIcon":true, "homeIcon":$store.state.homeIcon,"homeIconH":$store.state.homeIconH}'></span>主页</a>
            </li>
            <li @click="loginChkCl()">
-               <a><span class="barIcon classifyIcon"></span>分类</a>
+               <a><span :class='{"barIcon":true, "classifyIcon":$store.state.classifyIcon,"classifyIconH":$store.state.classifyIconH}'></span>分类</a>
            </li>
            <li @click="loginChkSp()">
-               <a><span class="barIcon shopcIcon"></span>购物车</a>
+               <a><span :class='{"barIcon":true, "shopcIcon":$store.state.shopcIcon,"shopcIconH":$store.state.shopcIconH}'></span>购物车</a>
            </li>
            <li @click="loginChkMi()">
-               <a><span class="barIcon mineIcon"></span>我的</a>
+               <a><span :class='{"barIcon":true, "mineIcon":$store.state.mineIcon,"mineIconH":$store.state.mineIconH}'></span>我的</a>
            </li>
        </ul>
     </div>
@@ -22,60 +22,16 @@ export default {
     name:"Navbar",
     data(){
       return{
-        // homeIcon:false,
-        // homeIconH:true,
-        // classifyIcon:true,
-        // classifyIconH:false,
-        // shopcIcon:true,
-        // shopcIconH:false,
-        // mineIcon:true,
-        // mineIconH:false,
       }  
     },
     methods:{
         loginChkId(){         
-            // this.homeIcon=false;
-            // this.homeIconH=true;
-            // this.classifyIcon=true;
-            // this.classifyIconH=true;
-            // this.shopcIcon=true;
-            // this.shopcIconH=false;
-            // this.mineIcon=true;
-            // this.mineIconH=false;
             this.$router.push("/");
-            /* this.homeIcon=false;
-            this.homeIconH=true;
-            this.classifyIcon=true;
-            this.classifyIconH=false; */
+
         },loginChkCl(){
-            /* this.homeIcon=true;
-            this.homeIconH=false;
-            this.classifyIcon=false;
-            this.classifyIconH=true;
-            this.shopcIcon=true;
-            this.shopcIconH=false;
-            this.mineIcon=true;
-            this.mineIconH=false; */
-
-            
-
-            this.$router.push("/classify"); 
-            /* this.homeIcon=true; 
-            this.homeIconH=false; 
-            this.classifyIcon=false;
-            this.classifyIconH=true;
-            console.log("false") */            
-        },
-        
+            this.$router.push("/classify");            
+        },        
         loginChkSp(){
-           /*  this.homeIcon=true;
-            this.homeIconH=false;
-            this.classifyIcon=true;
-            this.classifyIconH=false;
-            this.shopcIcon=false;
-            this.shopcIconH=true;
-            this.mineIcon=true;
-            this.mineIconH=false; */
             let localUser = localStorage.getItem("LOGINIFOCS");
             if(localUser){
                 this.$router.push("/shoppingcar")
@@ -84,21 +40,14 @@ export default {
             }            
         },
         loginChkMi(){
-            /* this.homeIcon=true;
-            this.homeIconH=false;
-            this.classifyIcon=true;
-            this.classifyIconH=false;
-            this.shopcIcon=true;
-            this.shopcIconH=false;
-            this.mineIcon=false;
-            this.mineIconH=true; */
             let localUser = localStorage.getItem("LOGINIFOCS");
             if(localUser){
                 this.$router.push("/mine")
             }else{
                 this.$router.push("/login")
             } 
-        }
+        },
+        
     }
 }
 </script>
@@ -153,6 +102,22 @@ export default {
 }
 .navlist .mineIcon{
     background: url("../assets/icon/mineIcon@2x.png") no-repeat  center center;  
+    background-size: 90%;  
+}
+.navlist .homeIconH{
+    background: url("../assets/icon/homeIconA@2x.png") no-repeat center center;    
+    background-size: 90%;
+}
+.navlist .classifyIconH{
+    background: url("../assets/icon/classityIconA@2x.png") no-repeat  center center; 
+    background-size: 90%;
+}
+.navlist .shopcIconH{
+    background: url("../assets/icon/shopcarIconA@2x.png") no-repeat  center center; 
+    background-size:90%; 
+}
+.navlist .mineIconH{
+    background: url("../assets/icon/mineIconA@2x.png") no-repeat  center center;  
     background-size: 90%;  
 }
 

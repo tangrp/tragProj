@@ -1,13 +1,7 @@
 <template>
-    <div class="content home">
-        
+    <div class="content home">        
         <div class="topHead">
             <Row>
-                <Col span="5">
-                    <!-- <Select v-model="curCity" class="citySlt">
-                        <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
-                    </Select> -->
-                </Col>
                 <Col span="21" class="searchBox">
                     <div class="searchwap">
                         <input type="text" v-model="serwod"  placeholder="请输入花名" class="searchIpt">
@@ -57,10 +51,7 @@
                     </Col>
                 </Row>
             </div>
-            <!-- tab切换 -->
-
         </div>
-        <Tabbar/>
     </div>
 </template>
 <script>
@@ -76,29 +67,7 @@ export default {
     data(){
         return {
             contentlist:[],
-           /*  cityList: [{
-            value: 'Beijing',
-            label: '北京'
-            }, {
-            value: 'Shanghai',
-            label: '上海'
-            }, {
-            value: 'Nanjing',
-            label: '南京'
-            }, {
-            value: 'Chengdu',
-            label: '成都'
-            }, {
-            value: 'Shenzhen',
-            label: '深圳'
-            }, {
-            value: 'Guangzhou',
-            label: '广州'
-            }],
-            curCity: '成都', */
             serwod:'',
-
-
         }
     },
     filters:{
@@ -146,19 +115,6 @@ export default {
             paginationClickable :true,
             clickable:true,
             type: 'bullets',  
-            // customRender: function(swiper, current, total) { 
-            //     var customPaginationHtml = ""; 
-            //     for(var i = 0; i < total; i++) { 
-            //         //判断哪个分页器此刻应该被激活 
-            //         if(i == (current - 1)) { 
-            //             customPaginationHtml += '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>'; 
-            //         } else { 
-            //             customPaginationHtml += '<span class="swiper-pagination-customs"></span>'; 
-            //         } 
-            //     } 
-            //     console.log(total);
-            //     return customPaginationHtml; 
-            // } ,
         },
         // 如果需要前进后退按钮
         navigation: {
@@ -167,11 +123,7 @@ export default {
             clickable :true,
             },
         })         
-        $(".navlist .homeIcon").css("backgroundImage",`url(${require('../assets/icon/homeIconA@2x.png')})`)
     },
-    created(){
-        // console.log($(".navlist .homeIcon"))
-    }
 }
 </script>
 <style scoped>
@@ -234,20 +186,13 @@ export default {
 }
 .topHead{
     z-index: 1000;
-    /* border:1px solid blue; */
     box-sizing: border-box;
 }
-/* .citySlt{
-    z-index: 1000;
-} */
 .searchBox{
     text-align: center;
     padding-left: 5px;
     position: relative;
     box-sizing: border-box;
-    /* border:1px solid red; */
-    /* width:100%; */
-    /* border:1px solid red; */
     padding: 10px;
     box-sizing: border-box;
 }
@@ -255,7 +200,6 @@ export default {
     height: 30px;
     width:100%;   
     position: relative;
-    /* border: 1px solid red; */
 }
 .searchwap::before{
     content: "";
@@ -291,62 +235,10 @@ export default {
     outline: none;
     top:0;
     left: 0;
+    border-radius: 0;
     border:1px solid transparent;
     border-bottom-color: #333;   
-}
-/* .homeIconH{
-    background: url("../assets/icon/homeIconA@2x.png") no-repeat center center !important;  
-    background-size: 90%;  
-} */
-/* .searchIpt{
-    background: red;
-} */
-
-/* .citySlt input{
-    border:none !important;
-}
-
-.el-input__inner{
-    border:none !important;
-    border-color: transparent !important;
-} */
-/* .swiper-button-next{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");} */
-/*自定义分页器的样式，这个你自己想要什么样子自己写*/
-/* .swiper-pagination{
-    width:100px;
-    height:100px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-
-} 
-
-
-.swiper-pagination-customs{
-    width: 30px;
-    height: 4px;
-    display: inline-block;
-    background: #000;
-    opacity: 1;
-    margin: 0 5px;
-
-}
-
-/*自定义分页器激活时的样式表现*/
-
-/* .swiper-pagination-customs-active {
-    opacity: 1;
-    background-color: #F78E00;
-
-}  */
-
-
-        
-
- 
-
-       
+}  
 
 </style>
 

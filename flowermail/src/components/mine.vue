@@ -70,7 +70,6 @@
         <div>
             <el-button type="text" class="logout"  @click="logoutF">退出登录</el-button>            
         </div>
-     <Tabbar/>
     </div>
 </template>
 <script>
@@ -106,9 +105,6 @@ export default {
             });             
        }
    },
-   mounted(){
-        $(".navlist .mineIcon").css("backgroundImage",`url(${require('../assets/icon/mineIconA@2x.png')})`)
-   }
 }
 </script>
 <style scoped>

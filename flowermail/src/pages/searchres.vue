@@ -94,8 +94,4 @@ export default {
     line-height: 40px;
     color: #666;
 }
-/* .sort-Menu .router-link-active{
-    color:#f5bf02;
-} */
-
 </style>

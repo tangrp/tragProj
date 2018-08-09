@@ -65,9 +65,6 @@ export default {
                     }
                 }
             })
-            
-
-
         } 
     }
 }
@@ -101,7 +98,6 @@ export default {
 .registerBox .rgIpt{
     display: inline-block;
     position: relative;
-    /* border:1px solid red; */
     width: 70%;
 }
 .registerBox .rgIpt .icon{
