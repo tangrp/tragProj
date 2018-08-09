@@ -1,0 +1,14 @@
+@charset 'utf-8';
+.hmContent{
+    padding:10px;
+}
+.text{
+    /* padding:10px; */
+    border-bottom: 5px; 
+}
+.txtImg{
+    width:100%;
+    /* padding: 10px; */
+    height:10rem;
+
+}

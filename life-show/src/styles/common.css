@@ -1,0 +1,31 @@
+@charset 'utf-8';
+@import '~antd/dist/antd.css';
+html,body,#root,.App{
+  height:100%;
+}
+*{
+  margin:0;
+  padding:0
+}
+ul{
+  list-style: none
+}
+a{
+  text-decoration: none
+}
+.components{
+  height:100%;
+}
+.content{
+  height:calc(100% - 49px - 64px);
+  /* height: 500px; */
+  overflow-y:scroll;
+  /* background:pink; */
+}
+.hidden{
+  display: none;
+}
+.details-page{
+  height:calc(100% - 64px);
+  overflow-y: scroll;
+}
