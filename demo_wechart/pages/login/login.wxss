@@ -1,0 +1,33 @@
+/* pages/login/login.wxss */
+.logo{
+  margin-top: 50rpx;
+  width: 100%;
+}
+input{
+  height: 45px;
+  width:85%;
+  margin:12rpx auto;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  letter-spacing: 2rpx;
+  position: relative;
+
+}
+button{
+  width:85%;
+  margin:60rpx auto;
+  background: rgb(199, 27, 10);
+  color: #fff;
+}
+.button-hover{
+  background: red;
+  color: #fff;
+}
+.icon{
+  width:40rpx;
+  height: 40rpx;
+  position: absolute;
+  top:20rpx;
+  left: 0;
+}

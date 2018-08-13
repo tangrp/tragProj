@@ -1,0 +1,21 @@
+/* pages/home/home.wxss */
+.container{
+  /* display: block; */
+  padding: 20rpx;
+}
+
+.itList{
+  padding:  20rpx 0;
+  border-bottom: 1px solid #ccc;
+  margin-top:20rpx;
+}
+
+.nsImg{
+  margin-top:20rpx;
+  width:100%;
+}
+.ctime{
+  display: block;
+  color:#bbb;
+  line-height: 30px;
+}

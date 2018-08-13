@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/news/news",
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat DEOM",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "backgroundColor": "#000000",
+    "color": "#fff",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "主页",
+      "iconPath":"imgs/home.png",
+      "selectedIconPath":"imgs/home_slt.png"
+    },{
+      "pagePath": "pages/news/news",
+      "text": "新闻",
+      "iconPath": "imgs/news.png",
+      "selectedIconPath": "imgs/news_slt.png"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "imgs/search.png",
+      "selectedIconPath": "imgs/search_slt.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "imgs/mine.png",
+      "selectedIconPath": "imgs/mine_slt.png"
+    }]
+  }
+}

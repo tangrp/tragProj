@@ -1,0 +1,13 @@
+<!-- 标题 -->
+<image class='logo' src='../../imgs/logo1.png'></image>
+<!-- 表单 -->
+<form>  
+  <input bindinput='handleInput' type='text' id='username' placeholder='请输入用户'>
+    <image class='icon'  mode='aspectFit' src='../../imgs/user-name.png'></image>
+  </input>
+  
+  <input bindinput='handleInput' type='password' id='password' placeholder='请输入密码'>
+    <image class='icon'  mode='aspectFit' src='../../imgs/password.png'></image>
+  </input>
+  <button bindtap='handleLoginBtnClick'>登录</button>
+</form>

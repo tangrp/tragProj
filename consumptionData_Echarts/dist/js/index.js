@@ -118,7 +118,7 @@ $(function () {
                 right: 130
             },
             legend: {
-                data: keys,
+                // data: keys,
                 right: 0,
                 itemGap: 17,
                 bottom: 50,

@@ -1,0 +1,10 @@
+<view class='container'>
+  <view wx:for="{{newslist}}" wx:for-index="idx" wx:for-item="itemName" class='itList'>
+    <!-- <web-view src='{{itemName.url}}'> -->
+        <text class='title'>{{itemName.title}}</text>
+        <text class='ctime'>{{itemName.ctime}}</text>
+        <!-- <text>{{itemName.url}}</text> -->
+        <image class='nsImg' mode='widthFix' src='{{itemName.picUrl}}'></image>
+    <!-- </web-view> -->
+  </view>
+</view>
