@@ -1,0 +1,109 @@
+{
+    "shopDescs":[
+        {
+            "ID":"No0001",
+            "imgList":["desc01@2x.png","desc01@2x.png","desc01@2x.png"],
+            "desc":"【一心一意】独一无二的花艺，由花艺师亲自创作独一无二的花艺，由花艺师亲自创作",
+            "flPrice":"180",
+            "orFLPrice":"200",
+            "express":"免费",
+            "personBuy":"2000",
+            "address":"四川成都",
+            "flName":"红玫瑰",
+            "flowers":"11枝香槟玫瑰、三枝白色玫瑰、搭配绿色桔梗",
+            "fllgg":" 一心一意的爱",
+            "attch":"免费附送精美贺卡，代写祝福。（您下单时可填写留言栏）",
+            "stock":"1000",
+            "conmentp":[
+                {
+                    "headpo":"headPo@2x.png",
+                    "name":"Vampire",
+                    "time":"2018-01-28",
+                    "desc":" 买的花收到了，送给女朋友她很喜欢，包装得很好看，还写了小卡片非常不错，下次还会再来。",
+                    "bufl":"1",
+                    "servAtid":"1"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"sunny",
+                    "time":"2018-02-25",
+                    "desc":"花送的很及时，花很漂亮，包装也很精致，客服很细心很好，很满意！",
+                    "bufl":"1",
+                    "servAtid":"0"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"tesf",
+                    "time":"2018-01-01",
+                    "desc":" 很好 送货速度很快 花也比较漂亮",
+                    "bufl":"0",
+                    "servAtid":"1"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"henry",
+                    "time":"2018-01-08",
+                    "desc":" 发货速度快，花不错，性价比高，包装精美。值得推荐。",
+                    "bufl":"0",
+                    "servAtid":"1"
+                }
+            ]     
+        }, {
+            "ID":"No0002",
+            "imgList":["list4@3x.png","desc01@2x.png","desc01@2x.png"],
+            "desc":"【天长地久】心意-8枝多头粉百合，桔梗，尤加利",
+            "flPrice":"120",
+            "orFLPrice":"150",
+            "express":"￥10",
+            "personBuy":"500",
+            "address":"四川成都",
+            "flName":"红玫瑰",
+            "flowers":"百合, 桔梗",
+            "fllgg":"你是我的牵挂！",
+            "attch":"免费附送精美贺卡，代写祝福。（您下单时可填写留言栏）",
+            "stock":"2500",
+            "conmentp":[
+                {
+                    "headpo":"headPo@2x.png",
+                    "name":"Vampire",
+                    "time":"2018-01-28",
+                    "desc":"花儿很漂亮，摆在房间里很好看，颜色很鲜亮 ，包装的也很精美 ，很满意！",
+                    "bufl":"1",
+                    "servAtid":"1"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"sunny",
+                    "time":"2018-02-25",
+                    "desc":"不错！！！",
+                    "bufl":"1",
+                    "servAtid":"0"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"tesf",
+                    "time":"2018-01-01",
+                    "desc":" 鲜花很漂亮，很喜欢。。",
+                    "bufl":"0",
+                    "servAtid":"1"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"henry",
+                    "time":"2018-01-08",
+                    "desc":" 质量好，花很鲜艳，好看，满意",
+                    "bufl":"0",
+                    "servAtid":"1"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"henry",
+                    "time":"2018-01-08",
+                    "desc":" 质量好，花很鲜艳，好看，满意",
+                    "bufl":"0",
+                    "servAtid":"1"
+                },{
+                    "headpo":"headPo@2x.png",
+                    "name":"henry",
+                    "time":"2018-01-08",
+                    "desc":" 质量好，花很鲜艳，好看，满意",
+                    "bufl":"0",
+                    "servAtid":"1"
+                }
+            ]     
+        }
+    ]
+}

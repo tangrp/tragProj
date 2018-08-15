@@ -5,7 +5,7 @@
                 <Col span="21" class="searchBox">
                     <div class="searchwap">
                         <input type="text" v-model="serwod"  placeholder="请输入花名" class="searchIpt">
-                        <Icon type="ios-search" class="serchIcon"  @on-click="searchrs" size="20" @click="searchrs"/>
+                        <Icon type="ios-search" class="serchIcon"  size="20" @click="searchrs"/>
                     </div>                    
                 </Col>
                 <Col span="3" class="msgBox">
@@ -87,12 +87,14 @@ export default {
             })     
         },
         searchrs(){
-            this.$router.push({
-                path:'/searchres',
-                query:{
-                    wd:this.serwod
-                }
-            })
+            if(this.serwod){
+                this.$router.push({
+                    path:'/searchres',
+                    query:{
+                        wd:this.serwod
+                    }
+                })  
+            }
         }
         
     },

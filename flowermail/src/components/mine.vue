@@ -90,19 +90,19 @@ export default {
    },
    methods:{
        logoutF(){
-            this.$confirm('你确定要退出吗？', {
-            confirmButtonText: '确定',
-            cancelButtonText: '取消',
-            type: 'warning'
-            }).then(() => {
-                localStorage.removeItem("LOGINIFOCS");
-                this.$router.push("/");
-                this.$message({                    
-                    type: 'success',
-                    message: '注销成功!'
-                });       
-            }).catch(() => {   
-            });             
+           let _this = this;
+           this.$layer.footer({
+                content: '确认退出',
+                btn: ['取消', '退出']
+                })
+                // 如果有btn
+                .then(function (res){
+                var text = res==0 ? '取消' : '退出'
+                if(text=='退出'){
+                    localStorage.removeItem("LOGINIFOCS");
+                    _this.$router.push("/");   
+                }           
+            })            
        }
    },
 }
@@ -117,8 +117,7 @@ export default {
     background-color: #f5bf02;
     position: relative;
     z-index: 101;
-    color: #404040;
-    
+    color: #404040; 
 }
 .mineprtB::after{
     content: "";
